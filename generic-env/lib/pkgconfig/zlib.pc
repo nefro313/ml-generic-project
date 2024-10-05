@@ -1,0 +1,13 @@
+prefix=/Users/robinkphilip/ml-generic-project/generic-env
+exec_prefix=/Users/robinkphilip/ml-generic-project/generic-env
+libdir=/Users/robinkphilip/ml-generic-project/generic-env/lib
+sharedlibdir=/Users/robinkphilip/ml-generic-project/generic-env/lib
+includedir=/Users/robinkphilip/ml-generic-project/generic-env/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

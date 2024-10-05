@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/robinkphilip/ml-generic-project/generic-env
+exec_prefix=/Users/robinkphilip/ml-generic-project/generic-env
+libdir=/Users/robinkphilip/ml-generic-project/generic-env/lib
+includedir=/Users/robinkphilip/ml-generic-project/generic-env/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread
