@@ -18,7 +18,7 @@ from src.utils import save_object
 
 @dataclass
 class DataTransformationConfig:
-    preprocessor_obj_file_path = os.path.join('artifacts','preprocessor.pkl')
+    preprocessor_obj_file_path:str = os.path.join('artifacts','preprocessor.pkl')
 
 class DataTransformation:
     def __init__(self):
@@ -74,7 +74,7 @@ class DataTransformation:
             
             return preprocessor
         except  Exception as e:
-            raise CustomExpection(e,sys)
+            raise CustomException(e,sys)
     
     def initate_data_transformation(self,train_path,test_path):
         try:
@@ -118,4 +118,4 @@ class DataTransformation:
                 self.data_transformation_config.preprocessor_obj_file_path
             )
         except Exception as e:
-            raise CustomExpection(e,sys)
+            raise CustomException(e,sys)
