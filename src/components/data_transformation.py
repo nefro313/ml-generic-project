@@ -12,7 +12,7 @@ from sklearn.preprocessing import OneHotEncoder,StandardScaler
 from sklearn.pipeline import Pipeline
 
 # custom made lib for logging and expection
-from src.exepection import  CustomExpection
+from src.exception import  CustomExpection
 from src.logger import logging
 from src.utils import save_object
 

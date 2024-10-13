@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd 
 import dill
 
-from src.exepection import CustomExpection
+from src.exception import CustomExpection
 from src.logger import logging
 
 def save_object(file_path,obj):
