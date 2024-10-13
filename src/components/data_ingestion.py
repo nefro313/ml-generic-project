@@ -1,7 +1,7 @@
 import os
 import sys
 # custom made lib for logging and expection
-from src.exception import  CustomExpection
+from src.exception import  CustomException
 from src.logger import logging
 from src.components.data_transformation import DataTransformationConfig
 from src.components.data_transformation import DataTransformation
